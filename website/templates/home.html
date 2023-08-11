@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block title %}Home{% endblock %} {%block content%}
+<h1 class="text-center">Notes</h1>
+<form method="POST" class="d-flex flex-column home-container">
+  <label for="note">
+    <h3>Type Your Notes:</h3>
+    <br />
+    <input class="w-100" type="text" name="note" id="note" />
+  </label>
+  <ul class="todo-ul mt-2 mb-2 list-group" id="notes">
+    {%for note in user.notes%}
+    <li class="list-group-item d-flex justify-content-between">
+      {{note.data}}
+      <button class="close" type="button" onClick="deleteNote({{ note.id }})">
+        <span class="delete-button">&times;</span>
+      </button>
+    </li>
+    {%endfor%}
+  </ul>
+  <button class="btn-outline-success" type="submit">Add Notes</button>
+</form>
+{%endblock%}

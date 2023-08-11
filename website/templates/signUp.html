@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block title %}Sign Up{% endblock %} {%block
+content%}
+<h1 class="text-center">Sign Up</h1>
+<form method="POST" class="signUp-container form-group d-flex flex-column">
+  <label for="fName">
+    <h3>First Name</h3>
+    <input class="w-100 form-control" type="text" name="fName" id="fName" />
+  </label>
+  <label for="email">
+    <h3>Email</h3>
+    <input class="w-100 form-control" type="email" name="email" id="email" />
+  </label>
+  <label for="password">
+    <h3>Password</h3>
+    <input
+      class="w-100 form-control"
+      type="password"
+      name="password"
+      id="password"
+    />
+  </label>
+  <br />
+  <div class="d-flex button-container">
+    <button class="btn-outline-primary w-100" type="submit">Submit</button>
+  </div>
+</form>
+{%endblock%}

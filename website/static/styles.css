@@ -1,0 +1,55 @@
+.login-container input,
+.login-container button {
+  border-radius: 0.25em;
+  font-size: 1em;
+  height: auto;
+  padding: 0.5em;
+}
+
+.signUp-container input {
+  border-radius: 0.25em;
+  font-size: 1em;
+  height: auto;
+  padding: 0.5em;
+}
+
+.button-container button {
+  padding: 0.5em;
+  border-radius: 0.25em;
+}
+.button-container button:first-child {
+  margin-right: 0.5em;
+}
+
+.button-container button:last-child {
+  margin-left: 0.5em;
+}
+
+.home-container input,
+.home-container button {
+  border-radius: 0.25em;
+  font-size: 1em;
+  height: auto;
+  padding: 0.5em;
+}
+
+.home-container input {
+  border: 1px solid rgba(0, 71, 18, 0.5);
+}
+
+.home-container input:hover {
+  box-shadow: 0px 0px 30px 0px rgba(0, 71, 18, 0.5);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 71, 18, 0.5);
+  -moz-box-shadow: 0px 0px 30px 0px rgba(0, 71, 18, 0.5);
+}
+
+.todo-ul li {
+  margin: 2px 0;
+  box-shadow: 5px 10px 12px -12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 5px 10px 12px -12px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 10px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+.delete-button:hover {
+  cursor: pointer;
+}
